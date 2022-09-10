@@ -1,0 +1,75 @@
+package com.company.lockers;
+
+import java.util.Scanner;
+
+public class Lockedme 
+{
+
+	public static void main(String[] args) 
+	{
+		Scanner obj = new Scanner(System.in);
+		int ch;
+		
+		displaymenu();
+		System.out.println("Enter your choice");
+		ch=Integer.parseInt(obj.nextLine());
+		
+		switch(ch)
+		{
+		   case 1:getAllFiles();
+		          break;
+		   case 2:createFiles();
+		          break;
+		   case 3:deleteFiles();
+		          break;
+		   case 4:searchFiles();
+		          break;
+		   case 5:System.exit(0);
+		          break;
+		   default:System.out.println("Invalid Option");
+		          break;
+		  
+		}
+		
+	    obj.next();       
+			
+	}
+    public static void displaymenu()
+    {
+    	System.out.println("*************************************************************************");
+    	System.out.println("\t\t Welcome to Company Lockers - Lockedme.com");
+    	System.out.println("\t\t Developer Name: Rupak Ranjan Behera");
+    	System.out.println("*************************************************************************");
+    	System.out.println("\t1. Display all the files");
+    	System.out.println("\t2. Add files to exixting directory");
+    	System.out.println("\t3. Delete a file ");
+    	System.out.println("\t4. Search a file");
+    	System.out.println("\t5. Exit");
+    	System.out.println("*************************************************************************");
+    	
+     }	
+    
+    public static void getAllFiles()
+    
+    {
+    	System.out.println("Display Files");
+    }
+    
+    public static void createFiles()
+    
+    {
+    	System.out.println("Create Files");
+    }
+    
+    public static void deleteFiles()
+    {
+    	System.out.println("Delete Files");
+    }
+    
+    public static void searchFiles()
+    {
+    	System.out.println("Search Files");
+    }
+    
+    
+}
